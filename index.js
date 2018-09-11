@@ -24,7 +24,7 @@ function VueLogBusAppender(layout, timezoneOffset) {
 
     // add a shutdown function.
     appender.shutdown = (done) => {
-        process.stdout.write('', done);
+        // do nothing
     };
 
     return appender;
@@ -38,4 +38,4 @@ function configure(config, layouts) {
   return VueLogBusAppender(layout, config.timezoneOffset);
 }
 
-exports.configure = configure;
+export {configure};
