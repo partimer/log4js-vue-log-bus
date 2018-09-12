@@ -19,7 +19,7 @@ function VueLogBusAppender(layout, timezoneOffset) {
     const appender = (loggingEvent) => {
         // emit the log message
         // use log level as emit channel
-        LogBus.$emit(loggingEvent.level, `${layout(loggingEvent, timezoneOffset)}\n`);
+        LogBus.$emit(loggingEvent.levelStr, `${layout(loggingEvent, timezoneOffset)}\n`);
     };
 
     // add a shutdown function.
