@@ -4,7 +4,7 @@
  * to listen to
  */
 import Vue from 'vue';
-const LogBus = new Vue();
+var LogBus = new Vue();
 
 
 // This is the function that generates an appender function
