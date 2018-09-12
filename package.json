@@ -22,9 +22,6 @@
   ],
   "devDependencies": {
   },
-  "engines": {
-    "node": ">=6.0"
-  },
   "dependencies": {
     "log4js": "^3.0.5",
     "vue": "^2.5.17"   
